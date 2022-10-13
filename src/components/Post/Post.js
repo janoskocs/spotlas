@@ -8,10 +8,10 @@ import PostNavigation from './PostNavigation/PostNavigation'
 import Caption from './Caption/Caption'
 import Categories from './Categories'
 import PostDate from './PostDate'
-const Post = () => {
+const Post = ({ userPost }) => {
     return (
         <div>Inidviual Post
-            <User />
+            <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
             <Options />
             <PostImage />
             <Location />

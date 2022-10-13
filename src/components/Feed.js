@@ -1,9 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 import Post from './Post/Post'
 
-const Feed = () => {
+const Feed = ({ users }) => {
+    console.log(users)
+
     return (
-        <Post />
+        <>
+            {users.map((userPost) => (
+                <Post key={userPost.id} userPost={userPost} />
+            ))}
+        </>
+
     )
 }
 

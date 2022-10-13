@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UserFullName = () => {
+const UserFullName = ({ userFullName }) => {
     return (
-        <div>UserFullName</div>
+        <div>{userFullName}</div>
     )
 }
 

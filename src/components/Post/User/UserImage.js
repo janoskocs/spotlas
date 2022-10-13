@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UserImage = () => {
+const UserImage = ({ userImage }) => {
     return (
-        <div>UserImage</div>
+        <img src={userImage} />
     )
 }
 
