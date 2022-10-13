@@ -1,9 +1,7 @@
 import React from 'react'
 
-const LocationName = () => {
-    return (
-        <div>LocationName</div>
-    )
+const LocationName = ({ spotName }) => {
+    return <p>{spotName}</p>
 }
 
 export default LocationName

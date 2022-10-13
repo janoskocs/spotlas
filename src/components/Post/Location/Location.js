@@ -3,12 +3,12 @@ import LocationImage from './LocationImage'
 import LocationName from './LocationName'
 import LocationType from './LocationType'
 
-const Location = () => {
+const Location = ({ spot }) => {
     return (
         <>
-            <LocationImage />
-            <LocationName />
-            <LocationType />
+            <LocationImage spotImage={spot.logo} />
+            <LocationName spotName={spot.name} />
+            <LocationType spotType={spot.types} />
         </>
     )
 }

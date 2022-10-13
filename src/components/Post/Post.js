@@ -14,7 +14,7 @@ const Post = ({ userPost }) => {
             <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
             <Options />
             <PostImage media={userPost.media} />
-            <Location />
+            <Location spot={userPost.spot} />
             <Save />
             <PostNavigation />
             <Caption />
