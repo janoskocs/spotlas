@@ -1,23 +1,21 @@
-import './style/main.css'
-
 import { useState, useEffect } from 'react'
 
+//Styles
+import './style/main.css'
 //Custom Hooks
-import useFetch from './components/useFetch';
-
+import useFetch from './components/useFetch'
+//Components
+import Navbar from './components/Navbar'
+import Feed from './components/Feed';
 function App() {
 
-  const url = 'https://dev.api.spotlas.com/interview/feed?page=1'
-  const userData = useFetch(url)
+  //const url = 'https://dev.api.spotlas.com/interview/feed?page=1'
+  //const userData = useFetch(url)
 
-  console.log(userData)
   return (
     <div className="App">
-
-      {userData.map((user) => (
-        <h1 key={user.id}>{user.caption.text}</h1>
-      ))}
-
+      <Navbar />
+      <Feed />
     </div>
   );
 }
