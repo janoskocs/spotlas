@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 
 //Styles
 import './style/main.css'
@@ -6,7 +5,8 @@ import './style/main.css'
 import useFetch from './components/useFetch'
 //Components
 import Navbar from './components/Navbar'
-import Feed from './components/Feed';
+import Feed from './components/Feed'
+
 function App() {
 
   const url = 'https://dev.api.spotlas.com/interview/feed?page=1'
@@ -16,7 +16,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Feed users={userData} />
-
     </div>
   );
 }
