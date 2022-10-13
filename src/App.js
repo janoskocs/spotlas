@@ -15,7 +15,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Feed users={userData} />
+      {userData.loaded ? <Feed users={userData.data} /> : <p>Loading</p>}
+
     </div>
   );
 }

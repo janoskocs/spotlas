@@ -13,7 +13,7 @@ const Post = ({ userPost }) => {
         <div>Inidviual Post
             <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
             <Options />
-            <PostImage />
+            <PostImage media={userPost.media} />
             <Location />
             <Save />
             <PostNavigation />

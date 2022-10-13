@@ -6,7 +6,7 @@ import React from 'react'
 
 const useFetch = (url) => {
     const [data, setData] = useState(null)
-
+    const [loaded, setLoaded] = useState(false)
     useEffect(() => {
         fetch(url)
             .then((response) => {
@@ -16,13 +16,14 @@ const useFetch = (url) => {
                 return response.json()
             }).then((data) => {
                 setData(data)
+                setLoaded(true)
             })
             .catch((err) => {
                 console.log(err)
             })
     }, [url])
 
-    return data
+    return { data, loaded }
 
 }
 
