@@ -17,9 +17,9 @@ const Post = ({ userPost }) => {
             <Location spot={userPost.spot} />
             <Save />
             <PostNavigation />
-            <Caption />
+            <Caption username={userPost.author.username} caption={userPost.caption} />
             <Categories />
-            <PostDate />
+            <PostDate postDate={userPost.created_at} />
         </div>
 
     )

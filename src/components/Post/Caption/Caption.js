@@ -2,11 +2,11 @@ import React from 'react'
 import UserName from '../User/UserName'
 import CaptionText from './CaptionText'
 
-const Caption = () => {
+const Caption = ({ username, caption }) => {
     return (
         <div>
-            <UserName />
-            <CaptionText />
+            <UserName userName={username} />
+            <CaptionText caption={caption.text} />
         </div>
     )
 }

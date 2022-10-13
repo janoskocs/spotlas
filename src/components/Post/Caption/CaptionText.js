@@ -1,9 +1,7 @@
 import React from 'react'
 
-const CaptionText = () => {
-    return (
-        <div>CaptionText</div>
-    )
+const CaptionText = ({ caption }) => {
+    return <p>{caption}</p>
 }
 
 export default CaptionText

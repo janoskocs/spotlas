@@ -1,9 +1,7 @@
 import React from 'react'
 
-const PostDate = () => {
-    return (
-        <div>PostDate</div>
-    )
+const PostDate = ({ postDate }) => {
+    return <p>{postDate}</p>
 }
 
 export default PostDate
