@@ -1,6 +1,7 @@
 
 //Styles
-import './style/main.css'
+import './style/output.css'
+
 //Custom Hooks
 import useFetch from './components/useFetch'
 //Components
