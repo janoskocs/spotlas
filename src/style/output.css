@@ -577,14 +577,6 @@ video {
   width: 8.333333%;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -610,6 +602,11 @@ video {
 --border: #e0e0e0;
 --footer-text: #c8c8c8;
 */
+
+.App {
+  width: 600px;
+  margin: 0 auto;
+}
 
 .user-image-border {
   background: linear-gradient(#ff0040, #ff0080);

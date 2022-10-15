@@ -12,6 +12,12 @@
 --border: #e0e0e0;
 --footer-text: #c8c8c8;
 */
+
+.App {
+    width: 600px;
+    margin: 0 auto;
+}
+
 .user-image-border {
     background: linear-gradient(#ff0040, #ff0080);
     border: 6px solid transparent;

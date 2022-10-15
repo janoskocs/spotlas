@@ -9,7 +9,7 @@ const PostImage = ({ media }) => {
         infinite: false
     }
     return (
-        <Slider className="w-6/12" {...settings}>
+        <Slider {...settings}>
             {media.map((image) => (
                 <img key={image.blur_hash} src={image.url} alt="" />
             ))}
