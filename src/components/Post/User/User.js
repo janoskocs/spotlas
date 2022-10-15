@@ -5,11 +5,14 @@ import UserName from './UserName'
 
 const User = ({ username, userFullName, userImage }) => {
   return (
-    <>
+    <div className="user-card">
       <UserImage userImage={userImage} />
-      <UserName userName={username} />
-      <UserFullName userFullName={userFullName} />
-    </>
+      <div className="user-names">
+        <UserName userName={username} />
+        <UserFullName userFullName={userFullName} />
+      </div>
+
+    </div>
 
   )
 }

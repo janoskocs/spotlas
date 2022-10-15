@@ -4,13 +4,72 @@
     padding: 0;
 }
 
-//Variables
+//Font
 
+
+//Variables
+$main-font: sans-serif;
+$spotlas-pink: rgb(255, 0, 96);
+$bright-green: rgb(48, 216, 72);
+$main-pink-1: #ff0080;
+$main-pink-2: #ff0040;
+$title-subtext: #c8c8c8;
+$border: #e0e0e0;
+$footer-text: #c8c8c8;
 
 //Mixins
+
 
 
 //App
 .App {
     text-align: center;
+    font-family: $main-font;
+}
+
+.user-card {
+    display: flex;
+
+    img {
+        width: 64px;
+        border-radius: 100%;
+        border: 5px solid linear-gradient($main-pink-1, $main-pink-2);
+    }
+
+    .user-names {
+        margin-left: 10px;
+        align-items: center;
+    }
+
+}
+
+.App {
+
+    //Post style
+
+    .post {
+        border: 1px solid black;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+
+        .post-media {
+            border: 1px solid red;
+
+            .user-media {
+                width: 30%;
+                position: absolute;
+                z-index: -1;
+            }
+
+            img {
+                width: 64px;
+            }
+
+            .location-component {
+                display: flex;
+            }
+        }
+
+    }
 }

@@ -10,16 +10,21 @@ import Categories from './Categories'
 import PostDate from './PostDate'
 const Post = ({ userPost }) => {
     return (
-        <div>Inidviual Post
-            <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
-            <Options />
-            <PostImage media={userPost.media} />
-            <Location spot={userPost.spot} />
-            <Save />
-            <PostNavigation />
-            <Caption username={userPost.author.username} caption={userPost.caption} />
-            <Categories />
-            <PostDate postDate={userPost.created_at} />
+        <div className="post">
+            <div className="post-media">
+                <PostImage media={userPost.media} />
+                <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
+                <Options />
+                <Location spot={userPost.spot} />
+                <Save />
+            </div>
+            <div className="post-navigation">
+                <PostNavigation />
+                <Caption username={userPost.author.username} caption={userPost.caption} />
+                <Categories />
+                <PostDate postDate={userPost.created_at} />
+            </div>
+
         </div>
 
     )
