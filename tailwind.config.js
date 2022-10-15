@@ -6,7 +6,9 @@ module.exports = {
     './src/*.{html,js}'
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': ['Graphik']
+    }
   },
   plugins: [],
 }
