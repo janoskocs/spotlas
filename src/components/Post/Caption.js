@@ -5,8 +5,8 @@ import UserName from './User/UserName'
 const Caption = ({ username, caption }) => {
     return (
         <div className="caption">
-            <UserName userName={username} />
-            <p>{caption.text}</p>
+            <UserName className="inline" userName={username} />
+            <p className="inline truncate ...">{caption.text}</p>
         </div>
     )
 }
