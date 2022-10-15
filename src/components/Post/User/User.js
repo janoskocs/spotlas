@@ -5,9 +5,9 @@ import UserName from './UserName'
 
 const User = ({ username, userFullName, userImage }) => {
   return (
-    <div className="user-card">
+    <div className="flex user-card">
       <UserImage userImage={userImage} />
-      <div className="user-names">
+      <div className="flex flex-col justify-center user-names">
         <UserName userName={username} />
         <UserFullName userFullName={userFullName} />
       </div>

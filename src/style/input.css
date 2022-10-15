@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Variables 
+--spotlas-pink: rgb(255, 0, 96);
+--bright-green: rgb(48, 216, 72);
+--main-pink-1: #ff0080;
+--main-pink-2: #ff0040;
+--title-subtext: #c8c8c8;
+--border: #e0e0e0;
+--footer-text: #c8c8c8;
+*/
+.user-image-border {
+    background: linear-gradient(#ff0040, #ff0080);
+    border: 6px solid transparent;
+}
+
+.rounded {
+    border-radius: 100%;
+}

@@ -548,3 +548,58 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.flex {
+  display: flex;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+/* Variables 
+--spotlas-pink: rgb(255, 0, 96);
+--bright-green: rgb(48, 216, 72);
+--main-pink-1: #ff0080;
+--main-pink-2: #ff0040;
+--title-subtext: #c8c8c8;
+--border: #e0e0e0;
+--footer-text: #c8c8c8;
+*/
+
+.user-image-border {
+  background: linear-gradient(#ff0040, #ff0080);
+  border: 6px solid transparent;
+}
+
+.rounded {
+  border-radius: 100%;
+}
