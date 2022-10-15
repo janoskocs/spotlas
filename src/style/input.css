@@ -20,3 +20,7 @@
 .rounded {
     border-radius: 100%;
 }
+
+.post-image-nav {
+    pointer-events: none;
+}

@@ -11,12 +11,18 @@ import PostDate from './PostDate'
 const Post = ({ userPost }) => {
     return (
         <div className="post">
-            <div className="post-media">
-                <PostImage media={userPost.media} />
-                <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
-                <Options />
-                <Location spot={userPost.spot} />
-                <Save />
+            <div className="relative post-media">
+                <div className="h-full absolute z-10 flex flex-col justify-between post-image-nav">
+                    <div className="flex top-nav">
+                        <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
+                        <Options />
+                    </div>
+                    <div className="flex bottom-part">
+                        <Location spot={userPost.spot} />
+                        <Save />
+                    </div>
+                </div>
+                <PostImage className="absolute" media={userPost.media} />
             </div>
             <div className="post-navigation">
                 <PostNavigation />
