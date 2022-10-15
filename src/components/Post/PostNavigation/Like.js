@@ -1,8 +1,11 @@
 import React from 'react'
+import likeIcon from '../../../assets/Like.svg'
 
 const Like = () => {
     return (
-        <div>Like</div>
+        <button>
+            <img src={likeIcon} alt="Like" />
+        </button>
     )
 }
 

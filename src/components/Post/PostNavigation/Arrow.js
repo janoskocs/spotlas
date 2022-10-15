@@ -1,8 +1,11 @@
 import React from 'react'
+import PaperPlaneIcon from '../../../assets/Share.svg'
 
 const Arrow = () => {
     return (
-        <div>Arrow</div>
+        <button>
+            <img src={PaperPlaneIcon} alt="Paper Plane" />
+        </button>
     )
 }
 
