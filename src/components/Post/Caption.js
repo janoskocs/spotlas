@@ -8,11 +8,11 @@ const Caption = ({ username, caption }) => {
     const [truncatedText, setTruncatedText] = useState('')
     const [truncated, setTruncated] = useState(true)
     const [currentText, setCurrentText] = useState('')
-
     useEffect(() => {
         setTruncatedText(truncate(fullText, { length: 55, omission: ' ' }))
         setCurrentText(truncatedText)
-    }, [])
+    }, [truncatedText])
+
 
     const handleTruncate = (boolean) => {
         if (boolean) {
