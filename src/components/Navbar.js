@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <h1>Feed</h1>
+        <h1 className='font-bold text-center'>Feed</h1>
     )
 }
 
