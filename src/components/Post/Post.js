@@ -5,7 +5,7 @@ import User from './User/User'
 import Location from './Location/Location'
 import Save from './Save'
 import PostNavigation from './PostNavigation/PostNavigation'
-import Caption from './Caption/Caption'
+import Caption from './Caption'
 import Categories from './Categories'
 import PostDate from './PostDate'
 const Post = ({ userPost }) => {

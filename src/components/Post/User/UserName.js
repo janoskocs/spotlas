@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserName = ({ userName }) => {
     return (
-        <div>{userName}</div>
+        <div className="inline font-bold">{userName}</div>
     )
 }
 
