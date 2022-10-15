@@ -4,12 +4,12 @@ import Comment from './Comment'
 import Like from './Like'
 import Arrow from './Arrow'
 
-const PostNavigation = () => {
+const PostNavigation = ({ likedPosts, handleLike, userPost }) => {
     return (
         <div>
             <Map />
             <Comment />
-            <Like />
+            <Like likedPosts={likedPosts} handleLike={handleLike} userPost={userPost} />
             <Arrow />
         </div>
     )

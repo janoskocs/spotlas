@@ -4,9 +4,9 @@ import en from 'javascript-time-ago/locale/en.json'
 import ReactTimeAgo from 'react-time-ago'
 
 const PostDate = ({ postDate }) => {
-    TimeAgo.addDefaultLocale(en)
+    //TimeAgo.addDefaultLocale(en)
 
-    return <p><ReactTimeAgo date={postDate} locale="en-US" /></p>
+    //return <p><ReactTimeAgo date={postDate} locale="en-US" /></p>
 }
 
 export default PostDate

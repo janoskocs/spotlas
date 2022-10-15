@@ -30,3 +30,7 @@
 .post-image-nav {
     pointer-events: none;
 }
+
+.likedBtn {
+    background: linear-gradient(#ff0040, #ff0080);
+}

@@ -607,6 +607,11 @@ video {
   font-weight: 700;
 }
 
+.filter {
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 /* Variables 
 --spotlas-pink: rgb(255, 0, 96);
 --bright-green: rgb(48, 216, 72);
@@ -633,4 +638,8 @@ video {
 
 .post-image-nav {
   pointer-events: none;
+}
+
+.likedBtn {
+  background: linear-gradient(#ff0040, #ff0080);
 }
