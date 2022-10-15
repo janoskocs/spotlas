@@ -1,12 +1,12 @@
 import React from 'react'
-import UserName from '../User/UserName'
-import CaptionText from './CaptionText'
+import UserName from './User/UserName'
+
 
 const Caption = ({ username, caption }) => {
     return (
-        <div>
+        <div className="caption">
             <UserName userName={username} />
-            <CaptionText caption={caption.text} />
+            <p>{caption.text}</p>
         </div>
     )
 }
