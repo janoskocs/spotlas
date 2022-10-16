@@ -1,7 +1,6 @@
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
-import User from './User/User'
 import Heart from "./Heart"
 const PostImage = ({ showHeart, handleLike, userPostId, media }) => {
 
