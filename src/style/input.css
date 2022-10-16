@@ -54,3 +54,11 @@
 .grey-text {
     color: #c8c8c8;
 }
+
+.circle-image {
+    width: 96px;
+}
+
+.width-100-fix {
+    width: calc(100% - 64px);
+}

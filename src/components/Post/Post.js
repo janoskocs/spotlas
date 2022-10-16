@@ -14,12 +14,12 @@ const Post = ({ showHeart, likedPosts, handleLike, userPost }) => {
     return (
         <div className="post mt-4 md:mt-6 l:mt-8">
             <div className="relative post-media">
-                <div className="h-full absolute z-10 flex flex-col justify-between ml-2 md:ml-3 l:ml-4 mr-4 md:mr-6 l:mr-8 post-image-nav">
-                    <div className="flex mt-2  md:mt-3 l:mt-4 top-nav">
+                <div className="h-full absolute z-10 flex flex-col justify-between ml-2 md:ml-3 l:ml-4 mr-4 md:mr-6 l:mr-8 post-image-nav width-100-fix">
+                    <div className="flex justify-between mt-2  md:mt-3 l:mt-4 top-nav">
                         <User username={userPost.author.username} usernametextcolor="white" userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
                         <Options />
                     </div>
-                    <div className="flex bottom-part mb-2  md:mb-3 l:mb-4">
+                    <div className="flex justify-between bottom-part mb-2  md:mb-3 l:mb-4">
                         <Location spot={userPost.spot} />
                         <Save />
                     </div>

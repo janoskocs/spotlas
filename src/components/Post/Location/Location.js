@@ -8,12 +8,12 @@ const Location = ({ spot }) => {
 
             <LocationImage spotImage={spot.logo} />
 
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-centerml-2 md:ml-3 l:ml-4 text-2xl drop-shadow">
                 <LocationName spotName={spot.name} />
                 <LocationType spotType={spot.types} />
             </div>
 
-        </div>
+        </div >
 
 
     )
