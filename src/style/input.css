@@ -34,3 +34,10 @@
 .likedBtn {
     background: linear-gradient(#ff0040, #ff0080);
 }
+
+.inset-center {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}

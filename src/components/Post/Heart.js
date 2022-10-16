@@ -3,7 +3,7 @@ const Heart = ({ showHeart }) => {
 
     if (showHeart) {
         return (
-            <div className="absolute top-1/3 left-2/4 z-10  animate-ping heart">
+            <div className="absolute inset-center z-10  animate-ping heart">
                 <svg width="100px" height="100px" viewBox="0 0 100 100">
                     <title>Heart</title>
                     <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
