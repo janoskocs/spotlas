@@ -3,12 +3,12 @@ import UserFullName from './UserFullName'
 import UserImage from './UserImage'
 import UserName from './UserName'
 
-const User = ({ username, userFullName, userImage }) => {
+const User = ({ usernametextcolor, username, userFullName, userImage }) => {
   return (
     <div className="flex items-center user-card">
       <UserImage userImage={userImage} />
-      <div className="flex flex-col justify-center user-names">
-        <UserName userName={username} />
+      <div className="flex flex-col justify-center user-names ml-2 md:ml-3 l:ml-4 text-2xl tracking-wider">
+        <UserName usernametextcolor={usernametextcolor} userName={username} />
         <UserFullName userFullName={userFullName} />
       </div>
 

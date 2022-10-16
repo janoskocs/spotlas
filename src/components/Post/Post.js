@@ -16,7 +16,7 @@ const Post = ({ showHeart, likedPosts, handleLike, userPost }) => {
             <div className="relative post-media">
                 <div className="h-full absolute z-10 flex flex-col justify-between ml-2 md:ml-3 l:ml-4 mr-4 md:mr-6 l:mr-8 post-image-nav">
                     <div className="flex mt-2  md:mt-3 l:mt-4 top-nav">
-                        <User username={userPost.author.username} userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
+                        <User username={userPost.author.username} usernametextcolor="white" userFullName={userPost.author.full_name} userImage={userPost.author.photo_url} />
                         <Options />
                     </div>
                     <div className="flex bottom-part mb-2  md:mb-3 l:mb-4">
