@@ -23,6 +23,11 @@
     border: 6px solid transparent;
 }
 
+.location-image-border {
+    background: #fff;
+    border: 6px solid transparent;
+}
+
 .rounded {
     border-radius: 100%;
 }
@@ -40,4 +45,12 @@
     top: 43%;
     left: 43%;
     transform: translate(-50%, -50%);
+}
+
+.white-text {
+    color: #fff;
+}
+
+.grey-text {
+    color: #c8c8c8;
 }

@@ -25,8 +25,8 @@ const Caption = ({ username, caption }) => {
     }
     if (fullText.length < 55) {
         return (
-            <div className="caption">
-                <UserName className="inline" userName={username} />
+            <div className="caption mt-3 md:mt-4 l:mt-6 mx-2 md:mx-3 l:mx-4">
+                <UserName color='black' className="inline " userName={username} />
                 <p className="inline">{fullText}</p>
             </div>
         )

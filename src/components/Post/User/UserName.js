@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UserName = ({ userName }) => {
+const UserName = ({ color, userName }) => {
     return (
-        <div className="inline font-bold">{userName}</div>
+        <p style={{ color: { color } }} className="inline white-text font-bold" > {userName}</p>
     )
 }
 

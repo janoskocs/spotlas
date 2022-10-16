@@ -5,7 +5,7 @@ import UserName from './UserName'
 
 const User = ({ username, userFullName, userImage }) => {
   return (
-    <div className="flex user-card">
+    <div className="flex items-center user-card">
       <UserImage userImage={userImage} />
       <div className="flex flex-col justify-center user-names">
         <UserName userName={username} />

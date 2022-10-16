@@ -4,7 +4,7 @@ import LocationType from './LocationType'
 
 const Location = ({ spot }) => {
     return (
-        <div className="flex location-component">
+        <div className="flex items-center location-component">
 
             <LocationImage spotImage={spot.logo} />
 

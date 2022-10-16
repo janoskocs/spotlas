@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar mt-6 />
       {userData.loaded ? <Feed showHeart={showHeart} likedPosts={likedPosts} handleLike={handleLike} users={userData.data} /> : <p>Loading</p>}
 
     </div>
