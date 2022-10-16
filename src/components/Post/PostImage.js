@@ -6,7 +6,8 @@ const PostImage = ({ showHeart, handleLike, userPostId, media }) => {
 
     const settings = {
         dots: false,
-        infinite: false
+        infinite: false,
+        arrows: false
     }
     return (
         <>
