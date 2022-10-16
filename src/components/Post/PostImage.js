@@ -2,18 +2,23 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import User from './User/User'
-const PostImage = ({ handleLike, userPostId, media }) => {
+import Heart from "./Heart"
+const PostImage = ({ showHeart, handleLike, userPostId, media }) => {
 
     const settings = {
         dots: false,
         infinite: false
     }
     return (
-        <Slider {...settings}>
-            {media.map((image) => (
-                <img onDoubleClick={() => handleLike(userPostId)} key={image.blur_hash} src={image.url} alt="" />
-            ))}
-        </Slider>
+        <>
+            <Heart showHeart={showHeart} />
+            <Slider {...settings}>
+                {media.map((image) => (
+                    <img onDoubleClick={() => handleLike(userPostId)} key={image.blur_hash} src={image.url} alt="" />
+                ))}
+            </Slider>
+        </>
+
     )
 
     // return (

@@ -15,11 +15,16 @@ function App() {
   const userData = useFetch(url)
 
   const [likedPosts, setLikedPosts] = useState([])
+  const [showHeart, setShowHeart] = useState(false)
 
   const handleLike = (likedPost) => {
     if (!likedPosts.includes(likedPost)) {
       setLikedPosts([...likedPosts, likedPost])
       console.log('post liked')
+      setShowHeart(true)
+      setTimeout(() => {
+        setShowHeart(false)
+      }, 1000)
     } else {
       setLikedPosts(likedPosts.filter((post) => post !== likedPost))
       console.log('removed')
@@ -29,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {userData.loaded ? <Feed likedPosts={likedPosts} handleLike={handleLike} users={userData.data} /> : <p>Loading</p>}
+      {userData.loaded ? <Feed showHeart={showHeart} likedPosts={likedPosts} handleLike={handleLike} users={userData.data} /> : <p>Loading</p>}
 
     </div>
   );

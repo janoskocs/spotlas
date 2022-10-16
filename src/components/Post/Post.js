@@ -8,7 +8,9 @@ import PostNavigation from './PostNavigation/PostNavigation'
 import Caption from './Caption'
 import Categories from './Categories'
 import PostDate from './PostDate'
-const Post = ({ likedPosts, handleLike, userPost }) => {
+import Heart from './Heart'
+const Post = ({ showHeart, likedPosts, handleLike, userPost }) => {
+
     return (
         <div className="post">
             <div className="relative post-media">
@@ -22,7 +24,7 @@ const Post = ({ likedPosts, handleLike, userPost }) => {
                         <Save />
                     </div>
                 </div>
-                <PostImage className="absolute" handleLike={handleLike} userPostId={userPost.id} media={userPost.media} />
+                <PostImage showHeart={showHeart} className="absolute" handleLike={handleLike} userPostId={userPost.id} media={userPost.media} />
             </div>
             <div className="post-navigation">
                 <PostNavigation likedPosts={likedPosts} userPost={userPost} handleLike={handleLike} />

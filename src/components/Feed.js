@@ -1,11 +1,11 @@
 import React from 'react'
 import Post from './Post/Post'
 
-const Feed = ({ likedPosts, handleLike, users }) => {
+const Feed = ({ showHeart, likedPosts, handleLike, users }) => {
     return (
         <>
             {users.map((userPost) => (
-                <Post key={userPost.id} likedPosts={likedPosts} handleLike={handleLike} userPost={userPost} />
+                <Post showHeart={showHeart} key={userPost.id} likedPosts={likedPosts} handleLike={handleLike} userPost={userPost} />
             ))}
         </>
 
