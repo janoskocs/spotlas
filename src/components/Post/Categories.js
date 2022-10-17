@@ -14,8 +14,8 @@ const Categories = () => {
             className="categories flex  whitespace-nowrap overflow-x-scroll items-start mt-1 md:mt-2 l:mt-3 "
         >
             {categories.map((category, index) => (
-                <div key={index} className="category  inline-block drop-shadow  p-2 border-2 rounded-md ml-0.5 md:ml-1 l:ml-1.5 select-none" >
-                    <p>{category}</p>
+                <div key={index} className="category  inline-block shadow-md  p-2 border-2 rounded-md ml-0.5 md:ml-1 l:ml-1.5 select-none" >
+                    <p className="font-semibold">{category}</p>
                 </div>
             ))
             }
