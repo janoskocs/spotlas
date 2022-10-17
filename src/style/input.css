@@ -71,3 +71,7 @@
 .categories::-webkit-scrollbar {
     display: none;
 }
+
+.pointer-events-enabled {
+    pointer-events: all;
+}
