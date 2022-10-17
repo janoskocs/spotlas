@@ -67,3 +67,7 @@
 
     cursor: grab;
 }
+
+.categories::-webkit-scrollbar {
+    display: none;
+}

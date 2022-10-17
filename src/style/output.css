@@ -674,6 +674,11 @@ video {
           animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+.select-none {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -820,6 +825,10 @@ video {
 
 .categories {
   cursor: grab;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 375px) {
