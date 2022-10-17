@@ -8,8 +8,7 @@ import PostNavigation from './PostNavigation/PostNavigation'
 import Caption from './Caption'
 import Categories from './Categories'
 import PostDate from './PostDate'
-import Heart from './Heart'
-const Post = ({ showHeart, likedPosts, handleLike, userPost }) => {
+const Post = ({ showHeart, likedPosts, savedPosts, handleLike, handleSave, userPost }) => {
 
     return (
         <div className="post mt-4 md:mt-6 l:mt-8">
@@ -21,10 +20,10 @@ const Post = ({ showHeart, likedPosts, handleLike, userPost }) => {
                     </div>
                     <div className="flex justify-between bottom-part mb-2  md:mb-3 l:mb-4">
                         <Location spot={userPost.spot} />
-                        <Save />
+                        <Save savedPosts={savedPosts} handleSave={handleSave} userPost={userPost} />
                     </div>
                 </div>
-                <PostImage showHeart={showHeart} className="absolute" handleLike={handleLike} userPostId={userPost.id} media={userPost.media} />
+                <PostImage showHeart={showHeart} handleLike={handleLike} userPostId={userPost.id} media={userPost.media} />
             </div>
             <div className="post-navigation mt-3 md:mt-4 l:mt-6">
                 <PostNavigation likedPosts={likedPosts} userPost={userPost} handleLike={handleLike} />

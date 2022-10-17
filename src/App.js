@@ -11,9 +11,25 @@ import { useState } from 'react'
 
 function App() {
 
+  //Fetch data
   const url = 'https://dev.api.spotlas.com/interview/feed?page=1'
   const userData = useFetch(url)
 
+
+  //Save functionality
+  const [savedPosts, setSavedPosts] = useState([])
+
+  const handleSave = (savedPost) => {
+    if (!savedPosts.includes(savedPost)) {
+      setSavedPosts([...savedPosts, savedPost])
+      console.log('post saved' + savedPost)
+    } else {
+      setSavedPosts(savedPosts.filter((post) => post !== savedPost))
+      console.log('post removed from saved' + savedPost)
+    }
+  }
+
+  //Like functionality
   const [likedPosts, setLikedPosts] = useState([])
   const [showHeart, setShowHeart] = useState(false)
 
@@ -34,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <Navbar mt-6 />
-      {userData.loaded ? <Feed showHeart={showHeart} likedPosts={likedPosts} handleLike={handleLike} users={userData.data} /> : <p>Loading</p>}
+      {userData.loaded ? <Feed handleSave={handleSave} showHeart={showHeart} likedPosts={likedPosts} savedPosts={savedPosts} handleLike={handleLike} users={userData.data} /> : <p>Loading</p>}
 
     </div>
   );
