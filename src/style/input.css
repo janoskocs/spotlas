@@ -62,3 +62,8 @@
 .width-100-fix {
     width: calc(100% - 64px);
 }
+
+.categories {
+
+    cursor: grab;
+}
