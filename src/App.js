@@ -10,15 +10,12 @@ import Feed from './components/Feed'
 import { useState } from 'react'
 
 function App() {
-
   //Fetch data
   const url = 'https://dev.api.spotlas.com/interview/feed?page=1'
   const userData = useFetch(url)
 
-
   //Save functionality
   const [savedPosts, setSavedPosts] = useState([])
-
   const handleSave = (savedPost) => {
     if (!savedPosts.includes(savedPost)) {
       setSavedPosts([...savedPosts, savedPost])
@@ -32,7 +29,6 @@ function App() {
   //Like functionality
   const [likedPosts, setLikedPosts] = useState([])
   const [showHeart, setShowHeart] = useState(false)
-
   const handleLike = (likedPost) => {
     if (!likedPosts.includes(likedPost)) {
       setLikedPosts([...likedPosts, likedPost])
@@ -48,10 +44,9 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Navbar mt-6 />
+    <div className="App l:w-96">
+      <Navbar />
       {userData.loaded ? <Feed handleSave={handleSave} showHeart={showHeart} likedPosts={likedPosts} savedPosts={savedPosts} handleLike={handleLike} users={userData.data} /> : <p>Loading</p>}
-
     </div>
   );
 }

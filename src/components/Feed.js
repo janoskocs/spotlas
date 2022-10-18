@@ -9,7 +9,10 @@ const Feed = ({ showHeart, likedPosts, savedPosts, handleLike, handleSave, users
                     key={userPost.id}
                     showHeart={showHeart}
                     likedPosts={likedPosts}
-                    savedPosts={savedPosts} handleLike={handleLike} handleSave={handleSave} userPost={userPost} />
+                    savedPosts={savedPosts}
+                    handleLike={handleLike}
+                    handleSave={handleSave}
+                    userPost={userPost} />
             ))}
         </>
 
