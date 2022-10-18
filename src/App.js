@@ -14,6 +14,7 @@ function App() {
   const url = 'https://dev.api.spotlas.com/interview/feed?page=1'
   const userData = useFetch(url)
 
+
   //Save functionality
   const [savedPosts, setSavedPosts] = useState([])
   const handleSave = (savedPost) => {
