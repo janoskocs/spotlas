@@ -5,7 +5,7 @@ const LikeSVG = ({ color }) => {
         <>
             <svg fill="none" width="29px" height="26px">
                 <title>Like</title>
-                <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Design" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g id="Recommendation" transform="translate(-216.000000, -483.000000)">
                         <g id="Button-Bar" transform="translate(48.000000, 482.000000)">
                             <g id="Like" transform="translate(168.112540, 0.000000)">
