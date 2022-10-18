@@ -1,5 +1,5 @@
 import React from 'react'
-import SaveIconSaved from '../../assets/Star Border Saved.svg'
+import SaveIconSaved from '../../assets/saved.png'
 import SaveIcon from '../../assets/Star Border.svg'
 
 const Save = ({ savedPosts, handleSave, userPost }) => {
